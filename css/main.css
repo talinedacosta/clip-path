@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+body {
+  background: #DCF5FF;
+  margin: 0;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Nunito', 'sans-serif';
+}
+
+.inner {
+  background: #07daa5;
+  padding: 1em;
+  border-radius: 10px;
+  width: 250px;
+  -webkit-clip-path: circle(10% at 90% 20%);
+          clip-path: circle(10% at 90% 20%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+.inner:hover {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  background: #00B6FF;
+}
+
+.inner span {
+  float: right;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+  position: relative;
+  margin-right: 4%;
+}
+
+.inner:hover span {
+  color: rgba(255, 255, 255, 0);
+}
+
+.inner h1 {
+  color: white;
+  margin: 0;
+}
+
+.inner p {
+  color: white;
+  font-size: .8rem;
+}
+
+.container-2 {
+  width: 250px;
+  background: white;
+  border-radius: 5px;
+  background: url("../orange.jpg") no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.container-2 .inner-2 {
+  background: rgba(255, 255, 255, 0.527);
+  padding: 1em;
+  border-radius: 5px;
+  width: calc(100% - 2em);
+  -webkit-clip-path: inset(0% 0% 0% 100%);
+          clip-path: inset(0% 0% 0% 100%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.container-2 .inner-2 h1 {
+  color: black;
+  margin: 0;
+}
+
+.container-2 .inner-2 p {
+  color: black;
+  font-size: .8rem;
+}
+
+.container-2:hover .inner-2 {
+  -webkit-clip-path: inset(0% 0% 0% 0%);
+          clip-path: inset(0% 0% 0% 0%);
+}
+/*# sourceMappingURL=main.css.map */
